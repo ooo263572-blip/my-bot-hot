@@ -27,7 +27,7 @@ DATA.mkdir(exist_ok=True)
 # ---- Settings (edit here) ----
 PORT = 5000
 SERVER_NAME = "my server"          # name shown in the admin Telegram message
-LOCAL_API = False                  # True = also serve the HTTP API on HOST:PORT (not needed by the app)
+LOCAL_API = True                  # True = also serve the HTTP API on HOST:PORT (not needed by the app)
 HOST = "0.0.0.0"                 # local API address, only used if LOCAL_API is True
 USE_RELAY = True                  # True = also use the ntfy.sh relay (needs ntfy.sh)
 USE_TUNNEL = False                  # True = also open a cloudflared quick tunnel
