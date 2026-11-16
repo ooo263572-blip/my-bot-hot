@@ -864,7 +864,7 @@ if __name__ == "__main__":
     threading.Thread(target=poll_admin_bot, daemon=True).start()
     if use_local:
         try:
-            app.run(host=HOST, port=PORT, threaded=True)
+            app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), threaded=True)
         except (OSError, SystemExit) as e:
             print(f"Local API not started ({e}). The relay keeps running.", flush=True)
     threading.Event().wait()  # keep the relay alive
