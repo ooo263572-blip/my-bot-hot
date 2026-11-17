@@ -30,7 +30,7 @@ SERVER_NAME = "my server"          # name shown in the admin Telegram message
 LOCAL_API = True                  # True = also serve the HTTP API on HOST:PORT (not needed by the app)
 HOST = "0.0.0.0"                 # local API address, only used if LOCAL_API is True
 USE_RELAY = True                  # True = also use the ntfy.sh relay (needs ntfy.sh)
-USE_TUNNEL = False                  # True = also open a cloudflared quick tunnel
+USE_TUNNEL = True                  # True = also open a cloudflared quick tunnel
 NTFY = "https://ntfy.sh"           # relay server
 API_KEY = ""                       # empty = generated once and saved in api_key.txt
 ADMIN_BOT_TOKEN = "8804167547:AAGrFuyKle3quQMnViBLvB-kt79idx_Gong"               # optional: Telegram admin bot token from @BotFather
